@@ -17,13 +17,13 @@ else:
     f.write(f'Пол: Женский, {str(age)}')
 if cf == 1:
     f.write("\nЧайлдфри")
-f.write(f"\nТелосложение: {weight}")
+f.write(f"\nТелосложение: {weight}".rstrip())
 f.write(f"\nРост: {height}")
 if sex == 1:
     f.write(f"\nЧеловеческая черта: {ht}" )
 else:
     f.write(f"\nЧеловеческая черта: {htf}")
 f.write("Здоровье: " + health)
-f.write(f"Работа: {job}{exp}" )
+f.write(f"Работа: {job}" .rstrip() + f" {exp}")
 
 f.close()
