@@ -31,13 +31,13 @@ for i in range(x):
     if cf == 1:
         f.write("\nЧайлдфри")
     f.write(f"\nТелосложение: {weight}".rstrip())
-    f.write(f"\nРост: {height}")
+    f.write(f"\nРост: {height}".rstrip())
     if sex == 1:
-        f.write(f"\nЧеловеческая черта: {ht}" )
+        f.write(f"\nЧеловеческая черта: {ht}".rstrip() )
     else:
-        f.write(f"\nЧеловеческая черта: {htf}")
-    f.write("Здоровье: " + health)
-    f.write(f"Работа: {job}" .rstrip() + f" {exp}")
-    f.write(f"Фобия: {fear}".rstrip())
+        f.write(f"\nЧеловеческая черта: {htf}".rstrip())
+    f.write(f"\nЗдоровье: {health}".rstrip())
+    f.write(f"\nРабота: {job}" .rstrip() + f" {exp}".rstrip())
+    f.write(f"\nФобия: {fear}".rstrip())
     f.write(f"\nИнвентарь: {item}".rstrip())
     f.close()
